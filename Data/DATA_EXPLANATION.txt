@@ -1,0 +1,32 @@
+FDC_Slope_BrkPt_Dry2.txt:
+* gauge		USGS gauge ID
+* HUC2		two number HUC ID (region)
+* Dry		1: runs dry. 0: always flows
+* PctFlow		Percent of days with nonzero flow
+* m_90-10		Slope of FDC curve between 90th and 10th percentile
+* err_1_abs	Mean of absolute difference between slope value and actual FDC between 90th and 10th percentile
+* err_1b		Mean of non-absolute difference between slope value and actual FDC between 90th and 10th percentile
+* break		Optimal breakpoint to minimize absolute error
+* err_2_abs	Mean of absolute difference between two-line predicted value and actual FDC between 90th and 10th percentile
+* err_2b		Mean of non difference between two-line predicted value and actual FDC between 90th and 10th percentile
+* m_1		Left-hand slope
+* m_2		Right-hand slope
+* err_ratio_abs	Ratio between err_1_abs and err_2_abs
+
+GaugeSummaryV6.txt:
+* Mean		mean flow (ft^3/s)
+* Std		standard deviation in flow (ft^3/s)
+* sd_Qann-QBar	std dev in ratio of mean annual flows to period of record mean (marker of interannual variability)
+* sd_Qmon-Qann	std dev in ratio of mean monthly flows to mean annual flows (marker of seasonal variability)
+* sd_Qday-Qmon	std dev in ratio of mean daily flows to mean monthly flows (marker of day to day variability)
+* Med		median flow (ft^3/s)
+* fdc20		20th percentile flow (ft^3/s)
+* fdc80		80th percentile flow (ft^3/s)
+* Dry		1: runs dry. 0: always flows
+* PctDry		Percent of dry days
+* All other categories duplicated from CAMELS hydro dataset
+
+MedAnnHydrograph.txt
+* Columns are for each USGS gauge in the CAMELS dataset
+* Each row is the median value of the daily mean flow divided by the period of record mean flow for each day of the year
+* Ordered from Jan-01 to Dec-31. Feb-29 excluded.
